@@ -1,0 +1,77 @@
+#sidebar{
+    float : left;
+    padding-right: 0em;
+    height:100%;
+   background: -webkit-linear-gradient(white, #C9C9C1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #C9C9C1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #C9C9C1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #C9C9C1); /* Standard syntax */
+}
+
+body{
+    font-family: 'Hoefler Text', 'Times New Roman', 'Times New Roman', Times, serif;
+    font-size: 16px;
+
+}
+
+h1{
+    font-size: 35px;
+}
+
+#content{
+    background-color: white;
+    margin: 0 0 0 200px;
+}
+
+#logo  {
+    position: relative;
+    margin-left: 25px;
+
+    margin-right: 10px;
+}
+
+#searchForm{
+
+    display: inline;
+}
+
+.contents{
+    border: 1px solid black;
+    background-color: #C9C9C1;
+
+    width: 250px;
+}
+
+.categories{
+    background-color: gray;
+}
+
+.loginNav{
+    float: right;
+}
+
+.bottomImages{
+    float: right;
+}
+
+.lefNav{
+    float: left;
+
+}
+
+#warn{
+    border: 1px solid gray;
+    border-left: 7px solid #E6AB2E;
+}
+
+.rightNav{
+    float: right;
+}
+
+.topNav{
+    height:50px;
+     background: -webkit-linear-gradient(white, #C9C9C1); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(white, #C9C9C1); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(white, #C9C9C1); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(white, #C9C9C1); /* Standard syntax */
+}
