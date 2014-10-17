@@ -1,5 +1,6 @@
 nav ul{
     list-style: none;
+    font-size: 2em;
     display: inline;
 }
 
@@ -18,4 +19,13 @@ a:hover {
 
 a:active {
     text-decoration: underline;
+}
+
+
+/*Change selection colour, because why not:*/
+::selection {
+  background: #0BD462;
+}
+::-moz-selection {
+  background: #0BD462;
 }
