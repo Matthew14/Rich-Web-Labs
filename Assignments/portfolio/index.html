@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="javascripts/portfolio.js"></script>
 </head>
-<body>
+<body onload="onLoadHandler()">
     <header>
 
     </header>
@@ -27,7 +27,8 @@
     <article>
         <section id="about">
             <header><h2>About Me</h2></header>
-            <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
+            <!-- Put a default age in there incase JS not enabled -->
+            <p>I'm a <span id="age">22</span> year old male human. I live in Dublin, Ireland where I study Computer Science in <a href="http://www.dit.ie">Dublin Institute of Technology</a></p>
         </section>
         <section id="experience">
             <header><h2>Experience</h2></header>
@@ -51,6 +52,8 @@
         </section>
     </article>
 
+
+        <!-- Inlude the required validation images and links that point to this page -->
         <footer>
         <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://lucalongo.eu/courses/2014-2015/RichWebApplicationTechnology/students/C11354316/portfolio/css/style.css&amp;profile=css3"><img src="images/css_validated.png" alt="css validator"/></a>
         <a href="http://validator.w3.org/check?uri=http://lucalongo.eu/courses/2014-2015/RichWebApplicationTechnology/students/C11354316/portfolio/">

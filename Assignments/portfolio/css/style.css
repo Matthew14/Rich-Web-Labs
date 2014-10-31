@@ -26,6 +26,3 @@ a:active {
 ::selection {
   background: #0BD462;
 }
-::-moz-selection {
-  background: #0BD462;
-}
