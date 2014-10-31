@@ -1,5 +1,16 @@
 function onLoadHandler(){
     setAge();
+    document.getElementById("showOrHideNavButton").innerHTML = "Show Navigation";
+}
+
+
+function showOrHideNav(){
+    var nav = document.getElementById("topOfPageNav");
+    var button = document.getElementById("showOrHideNavButton");
+    console.log(button.innerHTML);
+    nav.style.display = button.innerHTML == "Show Navigation" ? "inline-block" : "none";
+    button.innerHTML = button.innerHTML == "Show Navigation" ? "Hide Navigation" : "Show Navigation";
+
 }
 
 var setAge = function(){

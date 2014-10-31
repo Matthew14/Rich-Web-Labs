@@ -7,50 +7,83 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="javascripts/portfolio.js"></script>
 </head>
+
 <body onload="onLoadHandler()">
     <header>
+        <div id="topOfPageNav">
+            <nav>
+                    <a href="#about">About Me</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#interests">Interests</a>
+                    <a href="#awards">Awards</a>
+            </nav>
+        </div>
 
     </header>
+    <div id="welcome">
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#awards">Awards</a></li>
-        </ul>
+        <div class="innerCenter">
 
-    </nav>
-
+            <h1>Welcome</h1>
+            <p>Matthew O'Neill's Portfoilo</p>
+        </div>
+    </div>
+    <div class="wrapper">
     <article>
+     <button onclick="return showOrHideNav()" id="showOrHideNavButton">
+        Show Navigation
+    </button>
+
         <section id="about">
             <header><h2>About Me</h2></header>
+            <hr>
             <!-- Put a default age in there incase JS not enabled -->
-            <p>I'm a <span id="age">22</span> year old male human. I live in Dublin, Ireland where I study Computer Science in <a href="http://www.dit.ie">Dublin Institute of Technology</a></p>
+            <p>I'm a <span id="age">22</span> year old male human. I live in Dublin, Ireland where I study Computer Science in <a href="http://www.dit.ie">Dublin Institute of Technology</a>. I'd like to take this opportunity to welcome you to my portfolio page, which is the first assignment for the rich web module. If you'd like to learn more about me, or what I've been up to lately, please have a look at my <a target="blank" href="http://www.matthewoneill.com">website</a> and <a target="blank" href="http://www.github.com/matthew14">Github Page</a>.</p>
         </section>
+
         <section id="experience">
             <header><h2>Experience</h2></header>
-            <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
+            <hr>
+            <h3>Software Development Intern - Susquehanna International Group </h3><h5><em>Jan '14 - Aug '14</em></h5>
+            <p>Developed a number of internal tools for use by developers and traders in the company. Technologies used included C#, .NET, Winforms, WPF, ASP.NET Web API and WebForms, Python with IPython Notebook for data analysis. Tools developed included an internal, business domain-specific search engine using C#, WPF and ASP.NET Web API, and a multicast messaging application to monitor the status of running company applications</p>
+
+            <h3>Lab Helper - Dublin Institute of Technology </h3> <h5><em>September '13 - Oct '13</em></h5>
+            <p>Served as a lab helper as part of DIT’s lab helper scheme, assigned to assist the lab supervisor for three 2 hour lab sessions. Assisted first year programming students in completing their lab work in the C programming language, answering their questions about programming and how best to approach their tasks.</p>
+
+            <h3>Mentor - CoderDojo Kilkenny</h3> <h5><em>September '13 - Oct '13</em></h5>
+
+            <p>Teaches children from ages 10 - 17 computer programming and web development on Saturday afternoons, gives tutorials on games development in Python and helps children with their individual programming projects and websites.
+            Technologies taught include Python and the Pygame games development toolkit, HTML, CSS and Javascript as well as Scratch and in future will extend to app development in Java and more.</p>
         </section>
+
         <section id="skills">
             <header><h2>Skills</h2></header>
+            <hr>
             <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
         </section>
+
         <section id="education">
             <header><h2>Education</h2></header>
+            <hr>
             <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
         </section>
+
         <section id="interests">
             <header><h2>Interests</h2></header>
+            <hr>
             <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
         </section>
+
         <section id="awards">
             <header><h2>Awards and Honors</h2></header>
+            <hr>
             <p>I'm a pretty cool guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt sapiente eum accusamus quod, officiis aperiam maiores assumenda, perspiciatis eius ab et quisquam facere dolorem repellendus totam numquam consectetur. Culpa.</p>
         </section>
+
     </article>
+    </div>  <!-- /wrapper -->
 
 
         <!-- Inlude the required validation images and links that point to this page -->
