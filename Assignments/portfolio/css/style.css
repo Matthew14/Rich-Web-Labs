@@ -70,10 +70,12 @@ article{
     display: inline-block;
 }
 
+/*Really big font for the big blue welcome box*/
 #welcome h1{
     font-size: 5em;
 }
 
+/*By default the button to show and hid nav bar is hidden, as the nav bar is permenent on desktop*/
 #showOrHideNavButton{
     display: none;
     width: 100%;
@@ -87,15 +89,21 @@ article{
     nav a{
         display: table-row;
     }
+    /*To save space, we'll hide the nav bar on a smaller screen*/
     #topOfPageNav{
         display: none;
-        height: 15em;
+        height: 15em; /* make it taller, and each link on each line on mobile*/
     }
+    /*The nav bar is hidden, and we show a button to allow displaying it:*/
     #showOrHideNavButton{
         display: inline-block;
     }
     article{
-        margin-left: 5em;
-        margin-right: 5em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
+}
+
+footer{
+    text-align: center;
 }
