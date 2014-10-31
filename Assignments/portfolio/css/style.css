@@ -54,6 +54,7 @@ article{
     text-align: center;
 }
 
+/*This is the big blue thingy that looks nice*/
 #welcome{
     padding-top: 5em;
     color: #fff;
@@ -101,6 +102,10 @@ article{
     article{
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    #welcome h1{
+        font-size: 4em;
     }
 }
 
