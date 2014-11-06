@@ -1,0 +1,7 @@
+<section id="newSection">
+
+    <h1>This is a new section that was added from a file</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos adipisci commodi, ea modi sequi perferendis. Fugit dolorem quasi ipsa a deserunt. Quia, officia! Deserunt odio odit voluptate, assumenda qui unde.</p>
+
+</section>

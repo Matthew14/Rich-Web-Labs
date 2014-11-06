@@ -6,4 +6,6 @@ $('#makeLinksItalicButton').click(function(){
     $(this).text(linksAreItalic ?  "Make Links not Italic": "Make Links Italic" );
 });
 
-
+$('#addExternalContent').click(function(){
+    $('#newStuff').load('newSection.txt');
+});
