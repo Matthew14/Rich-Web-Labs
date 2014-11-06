@@ -2,9 +2,9 @@
 $('a').css("font-style", "italic");
 
 //Task 2
-$('#newStuff').load('newSection.txt');
+$('#external_links_section').after().load('newSection.txt');
 
-//Task 3
+//Task 3 & 4
 $('section').each(function(){
     var name = $(this).find("h1").eq(0).html();
     var buttonText = "Close " + name;
@@ -14,12 +14,12 @@ $('section').each(function(){
         if(sect.is(":visible"))
         {
             sect.hide();
-            $(this).text("Open " + name);
+            $(this).text("Open " + name); //Task 4
         }
         else
         {
             sect.show();
-             $(this).text("Close " + name);
+             $(this).text("Close " + name); //Task 4
         }
     });
 
