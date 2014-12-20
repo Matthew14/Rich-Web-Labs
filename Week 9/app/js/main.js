@@ -31,6 +31,7 @@ var AppRouter = Backbone.Router.extend({
 
 				// Render the Detail
 				if (id) {
+					console.log(id);
 					var nationalityDetailView = new NationalityDetailView({
 						model : nationalitesCollection.get(id)
 					});
@@ -54,6 +55,11 @@ var BaseModel = Backbone.Model.extend();
 var NationalitesCollection = Backbone.Collection.extend({
 	model : BaseModel,
 	url : this.baseUrl + "/nationalities"
+});
+
+var StudentsCollection = Backbone.Collection.extend({
+	model: BaseModel,
+	url: this.baseUrl +"/students"
 });
 
 // Nationalites List View (nationalites navigation)
@@ -90,7 +96,17 @@ var NationalitesListItemView = Backbone.View.extend({
 
 	template : _.template($("#nationality-item-template").html()),
 
+
 	render : function() {
+		var col =  new StudentsCollection();
+
+		col.fetch({
+			success : function() {
+				console.log(col)
+
+			}
+		});
+
 		this.$el.html(this.template(this.model.toJSON()));
 		return this;
 	}
@@ -104,7 +120,6 @@ var NationalityDetailView = Backbone.View.extend({
 	template : _.template($("#nationality-detail-template").html()),
 
 	render : function() {
-		// add here html to display
 		this.$content.html(this.template(this.model.toJSON()));
 		return this;
 	},

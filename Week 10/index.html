@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rich Web Application Technology - Backbone</title>
+<link type="text/css" href="app/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div id="sidebar">
+		<ul id="students"></ul>
+	</div>
+
+	<div id="content"></div>
+
+	<div id="detail"></div>
+
+	<!-- Templates -->
+	<script type="text/template" id="nationality-item-template">
+            <a href="#students/students/<%= id %>"><%= id %></a>
+        </script>
+
+	<script type="text/template" id="nationality-detail-template">
+            <h2><%= id %></h2>
+        </script>
+
+	<script type="text/template" id="studentOfNationality-detail-template">
+            <div>
+				<a href='#questionnaires/student/<%= student_number %>'>
+					Age: <%= age %> Nationality: <%= id_nationality %> Id: <%= student_number %>
+				</a>
+			</div>
+        </script>
+
+	<!-- JavaScript -->
+	<script src="libs/jquery.js"></script>
+	<script src="libs/underscore.js"></script>
+	<script src="libs/backbone.js"></script>
+	<script src="app/js/main3.js"></script>
+</body>
+</html>
