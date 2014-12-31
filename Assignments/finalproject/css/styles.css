@@ -1,3 +1,67 @@
 footer{
     text-align: center;
 }
+
+#task1Table{
+    overflow: scroll;
+}
+
+.accordion-div{
+    height: 500px;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: #EAEAEA;
+  fill-opacity: .9;
+}
+
+.x.axis path {
+  display: none;
+}
+
+#func3SortLabel {
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:blue; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid gray; }
+.legend tr:first-child{    border-top:1px solid gray; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
