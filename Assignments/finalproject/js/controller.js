@@ -356,7 +356,7 @@ assignment.controller('func6Controller',['$scope', '$http', '$q', function ($sco
                 if (questionnaire.data.questionnaireType=="WP") {tasks[ti].wp++;};
             });
 
-            tasks.forEach(function(task) {
+            angular.forEach(tasks, function(task) {
                 allTheTypes.push({ task: task.id, frequency: {NASA: task. nasa, AT: task.at, WP: task.wp}});
             });
 
